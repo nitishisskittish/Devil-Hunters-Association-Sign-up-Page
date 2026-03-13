@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Screwbal;
+    src: url(SCREWBAL.ttf);
+    /* Src: https://www.dafont.com/screwball.font */
+}
+
+:root {
+    color: rgb(195, 197, 199);
+    --primary_bg_color: #34363F;
+    --secondary_bg_color: #fddbcd;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-weight: 450;
+}
+
+h3 {
+    font-weight: 350;
+}
+
+
+body>div {
+    background-color: var(--primary_bg_color);
+    height: 100vh;
+}
+
+.hero-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Src: https://www.reddit.com/r/ChainsawMan/comments/1e06b7v/denji_overlooking_the_city/#lightbox */
+.bg {
+    flex: 1;
+    width: auto;
+    background-image: url(denji_overlooking_the_city.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-content {
+    flex: 1.5;
+    padding-top: 3.5%;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 32% auto;
+    column-gap: 3.5rem;
+}
+
+#my_form {
+    background-color: var(--secondary_bg_color);
+    color: rgb(49, 49, 49);
+    padding-bottom: 1%;
+    margin-top: 3.5%;
+    margin-bottom: 1.5%;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.4);
+}
+
+.step_up {
+    margin-left: 4%;
+    padding-top: 0.009%;
+}
+
+input {
+    margin-bottom: 2rem;
+    padding: 6px;
+    border-radius: 4px;
+    border: solid transparent 3px;
+    font-size: 0.9em;
+    width: 230px;
+    margin-top: 2px;
+}
+
+.invalid2 {
+    outline: 3px solid #db8181;
+}
+
+input:focus:not(.invalid2) {
+    outline: 3px solid #fabaaa;
+}
+
+.invalid,
+input:invalid:not(:focus) {
+    outline: 3px solid #db8181;
+}
+
+label {
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.actions {
+    margin-left: 4%;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+#already {
+    flex-basis: 100%;
+}
+
+#hero-text {
+    margin-left: 4%;
+    padding-top: 4.8%;
+    margin-right: 30%;
+}
+
+#submit_btn {
+    padding: 15px 65px 15px 65px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #2E2D35;
+    color: rgb(195, 197, 199);
+    max-width: 15.5rem;
+    flex: 1;
+}
+
+#error {
+    color: #db8181;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex: 1;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+#submit_btn:hover {
+    background-color: #45434a;
+    cursor: pointer;
+}
+
+a {
+    color: #FDCAB4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FDCAB4;
+}
+
+.logo {
+    background-color: #34363fb2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Screwbal;
+    font-size: 2.1rem;
+    margin-bottom: auto;
+}
+
+/* Src:https://www.pixilart.com/art/pochita-sr228f7d1a214aws3 */
+.logo>img {
+    max-width: 20%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#top_spacer {
+    flex: 0.186;
+}

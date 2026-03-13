@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devil Hunter Sign-up</title>
+    <link rel="icon" type="image/png" href="pochita.png">
+</head>
+
+<body>
+    <div class="hero-card">
+        <div class="bg">
+            <div id="top_spacer"></div>
+            <div class="logo">
+                <img src="pochita.png">
+                <h1>CHAINSAWMAN</h1>
+            </div>
+            <h5>Background art by <a href="https://www.darcyhw.com/">Darcy HW</a> | Logo by <a
+                    href="https://www.pixilart.com/art/pochita-sr228f7d1a214aws3">Mr-pUZZLES</a></h5>
+        </div>
+    </div>
+    <div class="form-content">
+        <div id="hero-text">
+            <h2>Hate Devils? Looking for a fufilling career in public safety? Join the devil hunters association
+                to help protect your community!
+                <br>
+                (and rake in the cash while your at it)
+                <br>
+                Sign up <i>now</i> to get started.
+            </h2>
+            <h2 style="margin-top: 2px;">What could <i>possibly</i> go wrong</h2>
+        </div>
+        <form id="my_form" novalidate>
+            <div class="step_up">
+                <h2 style="padding-top: 1%; margin-bottom: 1.5%;">Let's do this!</h2>
+                <div class="inputs">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <br>
+                        <input type="text" placeholder="Denji" name="first_name" id="first_name">
+                        <br>
+
+                        <label for="email">EMAIL</label>
+                        <br>
+                        <input type="email" placeholder="pochita@psdh.com" name="email" id="email">
+
+                        <br>
+                        <label for="password">PASSWORD</label>
+                        <br>
+                        <input type="password" name="password" id="password">
+
+                    </div>
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <br>
+                        <input type="text" placeholder="Hayakawa" name="last_name" id="last_name">
+                        <br>
+
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="text" placeholder="(123)-456-7890" name="phone" id="phone">
+                        <br>
+
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <br>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="actions">
+            <button type="submit" id="submit_btn" form="my_form">Create Account</button>
+            <h3 id="error"></h3>
+            <h3 id="already">Already have an account? <a href="https://www.google.com/">Log in</a></h3>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/imask"></script>
+<script src="script.js"></script>
+
+</html>
