@@ -31,13 +31,21 @@ const error = document.getElementById("error");
 my_form.addEventListener("submit", validateForm);
 function validateForm(submission) {
   submission.preventDefault();
-  isValid = true;
+  let isValid = true;
   error.textContent = "";
 
   for (const input of my_form.elements) {
     if (input.type == "submit") continue;
-    if (input.value == "") error.textContent = "Please fill out all the fields", isValid = false;
-    else if (input.labels != null && (input.matches(":invalid") || input.classList.contains("invalid") || input.classList.contains("invalid2"))) {
+    if (input.value == "") {
+      error.textContent = "Please fill out all the fields";
+      isValid = false;
+      return;
+    }
+  }
+
+  for (const input of my_form.elements) {
+    if (input.type == "submit") continue;
+    if (input.labels != null && (input.matches(":invalid") || input.classList.contains("invalid") || input.classList.contains("invalid2"))) {
       isValid = false;
       switch (input.labels[0].textContent) {
         case "EMAIL":
