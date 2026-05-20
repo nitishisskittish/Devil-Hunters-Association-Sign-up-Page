@@ -7,7 +7,7 @@
 :root {
     color: rgb(195, 197, 199);
     --primary_bg_color: #34363F;
-    --secondary_bg_color: #fddbcd;
+    --secondary_bg_color: #D5BEB6;
 }
 
 body {
@@ -47,7 +47,6 @@ body>div {
     background-image: url(denji_overlooking_the_city.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
