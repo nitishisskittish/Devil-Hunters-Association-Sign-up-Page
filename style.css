@@ -30,7 +30,7 @@ h3 {
 
 body>div {
     background-color: var(--primary_bg_color);
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .hero-card {
